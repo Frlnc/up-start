@@ -1,0 +1,13 @@
+/**
+ * Font Size
+ *
+ * http://jsfiddle.net/redclover/mkYtY/
+ */
+@mixin font-size($font-size, $line-height: true) {
+  font-size: $font-size + px;
+  font-size: #{$font-size} / #{$base-font-size} + rem;
+
+  @if ($line-height) {
+    @include line-height($font-size, $base-font-size);
+  }
+}

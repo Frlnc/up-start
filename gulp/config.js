@@ -59,8 +59,11 @@ config.tasks.styles = {
   // less configuration
   less: {
 
+    // the root less src directory
+    dir: config.src + 'styles/',
+
     // The less src directory
-    src: config.src + 'styles/**/*.less',
+    src: config.src + 'styles/app.less',
 
     // The less dest directory
     dest: config.assets + 'styles/',
@@ -73,8 +76,11 @@ config.tasks.styles = {
   // sass configuration
   sass: {
 
+    // the root sass src directory
+    dir: config.src + 'styles/',
+
     // The sass src directory
-    src: [ config.src + 'styles/**/*.scss', config.src + 'styles/**/*.sass' ],
+    src: [ config.src + 'styles/app.scss', config.src + 'styles/app.sass' ],
 
     // The sass dest directory
     dest: config.assets + 'styles/',

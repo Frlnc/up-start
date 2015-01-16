@@ -1,0 +1,12 @@
+/**
+ * Line Height
+ *
+ * http://jsfiddle.net/redclover/mkYtY/
+ */
+@mixin line-height($font-size) {
+  /* Sets the line-height to a multiple
+   * of $base-line-height that's not smaller than
+   * $font-size
+   */
+  line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}

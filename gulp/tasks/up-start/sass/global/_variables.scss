@@ -1,0 +1,20 @@
+/**
+ * Variables
+ */
+
+// Font
+$base-font-size: 16px !default;
+$base-line-height: 24px !default;
+
+// Bourbon
+$em-base: $base-font-size;
+
+// Line-height based vertical flow
+// Credit: https://github.com/bigbitecreative/base/blob/b33ff7935181384c479b5dfcc2f6cf06b04afba2/src/styles/utils/_defaults.scss
+$base-spacing-unit:          $base-line-height !default;
+$base-spacing-unit--double:  round($base-spacing-unit * 2) !default;
+$base-spacing-unit--half:    round($base-spacing-unit / 2) !default;
+$base-spacing-unit--quarter: round($base-spacing-unit / 4) !default;
+
+// Calc line-height ratio (e.g 16px/24px = 1.5)
+$line-height-ratio:    $base-line-height / $base-font-size;
