@@ -13,3 +13,5 @@ $grande: new-breakpoint(max-width 960px  12);
 $tall:   new-breakpoint(max-width 800px  12);
 $short:  new-breakpoint(max-width 560px  12);
 $demi:   new-breakpoint(max-width 340px  12);
+
+$venti--anti:  new-breakpoint(min-width 1080px 12);

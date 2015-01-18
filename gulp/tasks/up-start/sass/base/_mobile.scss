@@ -3,15 +3,13 @@
  */
 
 .mobile-only {
-  display: none;
-
-  @include media($venti) {
-    display: inherit;
+  @include media($venti--anti) {
+    display: none !important;
   }
 }
 
 .non-mobile-only {
   @include media($venti) {
-    display: none;
+    display: none !important;
   }
 }

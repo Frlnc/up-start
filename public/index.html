@@ -10,9 +10,7 @@
 </head>
 <body class="has-header  page--home">
     <header class="header" data-detachable="true" data-detached="false">
-        <div class="container">
-            <a class="ico  material  ico--menu  mobile-only  js-only  mobile-menu-toggle" id="mobile-menu-toggle"></a>
-        </div>
+        <a class="ico  material  ico--menu  js-only  mobile-menu-toggle  mobile-only" id="mobile-menu-toggle"></a>
     </header>
 
     <span class="nav__wrapper  nav__wrapper--sidenav" id="mobile-nav" data-show="false">
@@ -35,57 +33,63 @@
     <main class="main">
 
         <section class="section" id="commands">
-            <h1 class="section__title">Commands</h1>
-            <div class="command">
-                <h2 class="command__title">clean</h2>
-                <p class="command__description">
-                    Cleans all assets and uploads that are in the configured assets and uploads directories.
-                </p>
-            </div>
-            <div class="command">
-                <h2 class="command__title">scripts</h2>
-                <p class="command__description">
-                    Concats and minifies all the scripts that are in the configured scripts directory. There is a base module system pre-implemented for quick prototyping.
-                </p>
-            </div>
-            <div class="command">
-                <h2 class="command__title">styles</h2>
-                <p class="command__description">
-                    Compiles all the style sheets that are in the styles directory. This supports less and sass and you must specify which to compile via the <code>styles:less</code> command or <code>styles:sass</code> command.
-                </p>
-            </div>
-            <div class="command">
-                <h2 class="command__title">up-start</h2>
-                <p class="command__description">
-                    Helps scaffold your project via allowing the use of pre-defined sass or less setups (currently need a less implementation). Run <code>up-start:sass</code> or <code>up-start:less</code>.
-                </p>
-                <p><strong>Careful: <code>up-start</code> may overwrite existing files in the configured styles directory!</strong></p>
-            </div>
-            <div class="command">
-                <h2 class="command__title">watch</h2>
-                <p class="command__description">
-                    Runs <code>gulp.watch</code> to allow for watching files as they're edited and fire off the appropriate gulp tasks to compile them. This also runs a livereload server.
-                </p>
+            <div class="container">
+                <h1 class="section__title">Commands</h1>
+                <div class="command">
+                    <h2 class="command__title">clean</h2>
+                    <p class="command__description">
+                        Cleans all assets and uploads that are in the configured assets and uploads directories.
+                    </p>
+                </div>
+                <div class="command">
+                    <h2 class="command__title">scripts</h2>
+                    <p class="command__description">
+                        Concats and minifies all the scripts that are in the configured scripts directory. There is a base module system pre-implemented for quick prototyping.
+                    </p>
+                </div>
+                <div class="command">
+                    <h2 class="command__title">styles</h2>
+                    <p class="command__description">
+                        Compiles all the style sheets that are in the styles directory. This supports less and sass and you must specify which to compile via the <code>styles:less</code> command or <code>styles:sass</code> command.
+                    </p>
+                </div>
+                <div class="command">
+                    <h2 class="command__title">up-start</h2>
+                    <p class="command__description">
+                        Helps scaffold your project via allowing the use of pre-defined sass or less setups (currently need a less implementation). Run <code>up-start:sass</code> or <code>up-start:less</code>.
+                    </p>
+                    <p><strong>Careful: <code>up-start</code> may overwrite existing files in the configured styles directory!</strong></p>
+                </div>
+                <div class="command">
+                    <h2 class="command__title">watch</h2>
+                    <p class="command__description">
+                        Runs <code>gulp.watch</code> to allow for watching files as they're edited and fire off the appropriate gulp tasks to compile them. This also runs a livereload server.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section class="section  section--offset" id="contributing">
-            <h1 class="section__title">Contributing</h1>
-            <p class="section__description">We're always looking for people to help out with our projects, if you wish to help then you may make pull requests at our
-                <a href="https://github.com/frlnc/up-start">GitHub</a>!</p>
+            <div class="container">
+                <h1 class="section__title">Contributing</h1>
+                <p class="section__description">We're always looking for people to help out with our projects, if you wish to help then you may make pull requests at our
+                    <a href="https://github.com/frlnc/up-start">GitHub</a>!</p>
+            </div>
         </section>
 
         <section class="section" id="credits">
-            <h1 class="section__title">Credits</h1>
-            <p class="section__description">Up-Start is a project by <a href="https://github.com/frlnc">Frlnc</a> but it's made possible by so many sources that the list would be too large to type.</p>
-            <p class="section__description">The major sources are:</p>
-            <ul class="credits">
-                <li class="credits__item"><a href="https://github.com/bigbitecreative/base">Big Bite Creative</a></li>
-                <li class="credits__item"><a href="http://sass-lang.com/">Sass</a></li>
-                <li class="credits__item"><a href="http://lesscss.org/">Less</a></li>
-                <li class="credits__item"><a href="http://gulpjs.com/">Gulp</a></li>
-                <li class="credits__item"><a href="http://nodejs.org/">Node</a></li>
-            </ul>
+            <div class="container">
+                <h1 class="section__title">Credits</h1>
+                <p class="section__description">Up-Start is a project by <a href="https://github.com/frlnc">Frlnc</a> but it's made possible by so many sources that the list would be too large to type.</p>
+                <p class="section__description">The major sources are:</p>
+                <ul class="credits">
+                    <li class="credits__item"><a href="https://github.com/bigbitecreative/base">Big Bite Creative</a></li>
+                    <li class="credits__item"><a href="http://sass-lang.com/">Sass</a></li>
+                    <li class="credits__item"><a href="http://lesscss.org/">Less</a></li>
+                    <li class="credits__item"><a href="http://gulpjs.com/">Gulp</a></li>
+                    <li class="credits__item"><a href="http://nodejs.org/">Node</a></li>
+                </ul>
+            </div>
         </section>
 
     </main>
