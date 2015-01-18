@@ -1,6 +1,10 @@
 Up Start
 ========
 
+### Quick Info
+
+If you clone this repo and browse to the index.html page (`php -S localhost:8000 -t public/` or however you wish to host it) then you will be provided with a much nicer README! :octocat:
+
 ### ./back
 
 Put your backend API / app here (such as: Laravel).
