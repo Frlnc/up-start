@@ -1,0 +1,34 @@
+/**
+ * Sections
+ */
+
+section.section,
+.section {
+  @include rem-fallback(padding, 40px 0);
+  text-align: center;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &--offset {
+    background: palette(offset, background);
+  }
+
+  &__title {
+    @include rem-fallback(padding, 0 20px);
+    display: inline-block;
+    border-bottom: solid 1px palette(offset, border);
+
+    @include media($demi) {
+      display: block;
+    }
+  }
+
+  &__description {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

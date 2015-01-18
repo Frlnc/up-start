@@ -1,0 +1,75 @@
+/**
+ * Base
+ */
+
+html {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  overflow-y: scroll;
+  min-height: 100%;
+  font: #{($base-font-size / 16px) * 1em}/#{$base-line-height / $base-font-size} $font-primary;
+  font-weight: weight(base);
+  color: palette(primary, text);
+  margin-left: 240px;
+
+  @include media($venti) {
+    margin-left: 0;
+  }
+
+  &.no-js {
+    margin-left: 240px !important;
+  }
+}
+
+body,
+dd,
+form, legend,
+table, th, td, caption,
+hr {
+  margin:  0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre,
+%margin-bottom {
+  margin: 0 0 spacing(1) 0;
+  margin: 0 0 (spacing(1) / $base-font-size) * 1rem 0;
+  padding: 0;
+}
+
+h1 {
+  color: palette(texts, title);
+  font-weight: weight(heaviest);
+}
+
+h2, h3, h4, h5, h6 {
+  color: palette(texts, subhead);
+  font-weight: weight(heavier);
+}
+
+p {
+  font-width: weight();
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  color: palette(secondary);
+  font-weight: weight(heavier);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  @include outer-container;
+}

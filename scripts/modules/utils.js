@@ -5,9 +5,6 @@
  */
 frlnc.modules.utils = frlnc.makeEmitter();
 
-/**
- * A simple utility loader module.
- */
 (function () {
 
   var _utils = [];

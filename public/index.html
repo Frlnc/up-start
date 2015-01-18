@@ -8,7 +8,95 @@
     <title>Up-Start by Frlnc</title>
     <link rel="stylesheet" href="/assets/styles/app.css">
 </head>
-<body>
+<body class="has-header  page--home">
+    <header class="header" data-detachable="true" data-detached="false">
+        <div class="container">
+            <a class="ico  material  ico--menu  mobile-only  js-only  mobile-menu-toggle" id="mobile-menu-toggle"></a>
+        </div>
+    </header>
+
+    <span class="nav__wrapper  nav__wrapper--sidenav" id="mobile-nav" data-show="false">
+        <nav class="nav--sidenav">
+            <ul class="menu">
+                <li class="menu__item"><a href="#commands" data-hide="true">Commands</a></li>
+                <li class="menu__item"><a href="#contributing" data-hide="true">Contributing</a></li>
+                <li class="menu__item"><a href="#credits" data-hide="true">Credits</a></li>
+            </ul>
+        </nav>
+    </span>
+
+    <div class="hero  hero--tall">
+        <div class="container">
+            <h1 class="hero__title">Up-Start</h1>
+            <p class="hero__content">a simple setup to up-start web projects</p>
+        </div>
+    </div>
+
+    <main class="main">
+
+        <section class="section" id="commands">
+            <h1 class="section__title">Commands</h1>
+            <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi asperiores commodi, cupiditate eum excepturi maxime, minus numquam pariatur, sequi temporibus tenetur! Blanditiis exercitationem harum labore numquam quae quaerat voluptatem.</p>
+            <div class="command">
+                <h2 class="command__title">clean</h2>
+                <p class="command__description">
+                    Cleans all assets and uploads that are in the configured assets and uploads directories.
+                </p>
+            </div>
+            <div class="command">
+                <h2 class="command__title">scripts</h2>
+                <p class="command__description">
+                    Concats and minifies all the scripts that are in the configured scripts directory. There is a base module system pre-implemented for quick prototyping.
+                </p>
+            </div>
+            <div class="command">
+                <h2 class="command__title">styles</h2>
+                <p class="command__description">
+                    Compiles all the style sheets that are in the styles directory. This supports less and sass and you must specify which to compile via the <code>styles:less</code> command or <code>styles:sass</code> command.
+                </p>
+            </div>
+            <div class="command">
+                <h2 class="command__title">up-start</h2>
+                <p class="command__description">
+                    Helps scaffold your project via allowing the use of pre-defined sass or less setups (currently need a less implementation). Run <code>up-start:sass</code> or <code>up-start:less</code>.
+                </p>
+                <p><strong>Careful: <code>up-start</code> may overwrite existing files in the configured styles directory!</strong></p>
+            </div>
+            <div class="command">
+                <h2 class="command__title">watch</h2>
+                <p class="command__description">
+                    Runs <code>gulp.watch</code> to allow for watching files as they're edited and fire off the appropriate gulp tasks to compile them. This also runs a livereload server.
+                </p>
+            </div>
+        </section>
+
+        <section class="section  section--offset" id="contributing">
+            <h1 class="section__title">Contributing</h1>
+            <p class="section__description">We're always looking for people to help out with our projects, if you wish to help then you may make pull requests at our
+                <a href="https://github.com/frlnc/up-start">GitHub</a>!</p>
+        </section>
+
+        <section class="section" id="credits">
+            <h1 class="section__title">Credits</h1>
+            <p class="section__description">Up-Start is a project by <a href="https://github.com/frlnc">Frlnc</a> but it's made possible by so many sources that the list would be too large to type.</p>
+            <p class="section__description">The major sources are:</p>
+            <ul class="credits">
+                <li class="credits__item"><a href="https://github.com/bigbitecreative/base">Big Bite Creative</a></li>
+                <li class="credits__item"><a href="http://sass-lang.com/">Sass</a></li>
+                <li class="credits__item"><a href="http://lesscss.org/">Less</a></li>
+                <li class="credits__item"><a href="http://gulpjs.com/">Gulp</a></li>
+                <li class="credits__item"><a href="http://nodejs.org/">Node</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__credit">Made with <3 by <a href="https://github.com/frlnc">Frlnc</a></p>
+        </div>
+    </footer>
+
     <script src="/assets/scripts/app.js"></script>
     <script>frlnc.init();</script>
 </body>

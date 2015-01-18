@@ -1,0 +1,25 @@
+/**
+ * Hero
+ */
+
+.hero {
+  @include rem-fallback(padding, 60px 0);
+  text-align: center;
+  background: palette(primary);
+  color: #fff;
+
+  &__title {
+    @include font-size(36);
+    color: #fff;
+  }
+
+  &__content {
+    @include font-size(22);
+    margin-bottom: 0;
+    color: #fff;
+  }
+
+  &--tall {
+    @include rem-fallback(padding, 120px 0);
+  }
+}

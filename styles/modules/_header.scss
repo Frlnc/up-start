@@ -1,0 +1,24 @@
+/**
+ * Header
+ */
+
+body.has-header {
+  padding-top: 25px;
+}
+
+header.header,
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-top: solid 25px palette(primary, dark);
+  transition: background .3s;
+
+  &[data-detached="true"] {
+    background: transparentize(palette(primary), .1);
+  }
+
+  .ico--menu {
+    cursor: pointer;
+  }
+}

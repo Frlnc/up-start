@@ -1,0 +1,17 @@
+/**
+ * Mobile
+ */
+
+.mobile-only {
+  display: none;
+
+  @include media($venti) {
+    display: inherit;
+  }
+}
+
+.non-mobile-only {
+  @include media($venti) {
+    display: none;
+  }
+}

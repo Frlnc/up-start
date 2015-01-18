@@ -1,0 +1,7 @@
+/**
+ * Spacing
+ */
+
+@function spacing($amount) {
+  @return $base-line-height * $amount;
+}

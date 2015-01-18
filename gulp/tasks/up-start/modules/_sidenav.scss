@@ -1,0 +1,54 @@
+/**
+ * Sidenav
+ */
+
+.nav__wrapper--sidenav {
+  @include rem-fallback(width, 240px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-top: solid 25px palette(primary, dark);
+
+  @include media($venti) {
+    @include rem-fallback(margin-left, -240px);
+    background: palette(offset, overlay);
+
+    &[data-show="true"] {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+nav.nav--sidenav,
+.nav--sidenav {
+  @include rem-fallback(width, 240px);
+  background: #fff;
+  height: 100%;
+
+  @include media($venti) {
+    @include rem-fallback(margin-left, -240px);
+    transition: margin .3s;
+
+    .nav__wrapper.nav__wrapper--sidenav[data-show="true"] & {
+      margin-left: 0;
+    }
+  }
+
+  .menu {
+    list-style: none;
+
+    &__item {
+      @include rem-fallback(padding-left, 20px);
+      @include font-size(16px, false);
+      height: 64px;
+      line-height: 64px;
+      border-bottom: solid 1px palette(offset, divider);
+    }
+
+    a {
+      color: palette(texts, subhead);
+    }
+  }
+}

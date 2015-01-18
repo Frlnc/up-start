@@ -1,0 +1,41 @@
+/**
+ * Colours
+ */
+
+$palettes: (
+
+  primary: (
+    light: #D1C4E9,
+    base: #673AB7,
+    dark: #512DA8,
+    text: #212121
+  ),
+
+  secondary: (
+    base: #448AFF,
+    text: #727272
+  ),
+
+  offset: (
+    divider: #B6B6B6,
+    background: #e0e0e0,
+    overlay: rgba(#000, .5)
+  ),
+
+  texts: (
+    display: rgba(#000, .54),
+    title: rgba(#000, .87),
+    subhead: rgba(#000, .87),
+    body: rgba(#000, .87),
+    caption: rgba(#000, .54)
+  ),
+
+  texts-light: (
+    display: rgba(#fff, .54),
+    title: rgba(#fff, .87),
+    subhead: rgba(#fff, .87),
+    body: rgba(#fff, .87),
+    caption: rgba(#fff, .54)
+  )
+
+);

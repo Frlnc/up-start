@@ -7,7 +7,7 @@ var now = new Date();
 var config = {
 
   // The root src directory
-  src: '',
+  src: './',
 
   // The root dest directory
   dest: 'public/',
@@ -93,15 +93,30 @@ config.tasks.styles = {
 };
 
 /**
+ * The static configuration.
+ */
+config.tasks.static = {
+
+  // The sass src directory
+  src: config.src + 'static/**/*',
+
+  // The sass dest directory
+  dest: config.assets
+
+};
+
+/**
  * The watch configuration.
  */
 config.tasks.watch = {
 
   'scripts': config.tasks.scripts.src,
 
-  'styles:less': config.tasks.styles.less.src,
+  'styles:less': config.src + 'styles/**/*.less',
 
-  'styles:sass': config.tasks.styles.sass.src
+  'styles:sass': [ config.src + 'styles/**/*.scss', config.src + 'styles/**/*.sass' ],
+
+  'static': config.tasks.static.src
 
 };
 

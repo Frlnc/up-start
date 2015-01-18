@@ -1,0 +1,7 @@
+/**
+ * Font Weight
+ */
+
+@function weight($weight: 'base') {
+  @return map-get($weights, $weight);
+}

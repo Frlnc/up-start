@@ -10,6 +10,9 @@ gulp.task('default', [
 
   // CSS
   // 'styles:less',
-  // 'styles:sass'
+  // 'styles:sass',
+
+  // Static
+  // 'static'
 
 ]);

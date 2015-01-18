@@ -1,0 +1,7 @@
+/**
+ * Line Height
+ */
+
+@mixin line-height($font-size) {
+  line-height: ceil(strip-units($font-size / $base-line-height)) * strip-units($base-line-height / $font-size);
+}

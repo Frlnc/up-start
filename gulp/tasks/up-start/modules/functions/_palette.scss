@@ -1,0 +1,9 @@
+/**
+ * Colour Palette
+ *
+ * Credit: https://github.com/bigbitecreative/base/blob/c05190c8b4407e3d569f99bb773ce7ca09869afe/src/styles/utils/functions/_palette.scss
+ */
+
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
